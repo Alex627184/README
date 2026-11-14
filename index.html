@@ -1,9 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>For Elodie</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap">
 <style>
+  [hidden] { display: none !important; }
+  img { max-width: 100%; }
+  :root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); -webkit-text-size-adjust: 100%; }
   /* Layout: one centred card floating over a pink sky of falling sweets */
   :root {
     --bg: #ffe3ee;
@@ -198,6 +206,8 @@
     .choices label, button { transition: none; }
   }
 </style>
+</head>
+<body>
 
 <div id="rain" aria-hidden="true"></div>
 <div id="dim" aria-hidden="true"></div>
@@ -661,3 +671,5 @@
     } catch (err) { fallback(); }
   });
 </script>
+</body>
+</html>
